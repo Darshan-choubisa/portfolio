@@ -96,27 +96,27 @@
 
 
         <main class="flex-1">
-            <nav class="bg-slate-950 rounded-xl p-6 h-5xl shadow-lg border-1 border-gray-600 lg:mt-2 "
+            <nav class="bg-slate-950 rounded-xl p-6 p-2 h-5xl shadow-lg border-1 border-gray-600 lg:mt-2 "
                 id="aboutme-mobile">
                 <ul class="flex justify-evenly gap-3">
-                    <li id="aboutme"><a href="#">About me</a></li>
-                    <li id="summary"><a href="#">Summary</a></li>
-                    <li id="port"><a href="#">Portfolio</a></li>
-                    <li id="contact"><a href="#">Contact</a></li>
+                    <li class="text-sm" id="aboutme"><a href="#">About me</a></li>
+                    <li class="text-sm" id="summary"><a href="#">Summary</a></li>
+                    <li class="text-sm" id="port"><a href="#">Portfolio</a></li>
+                    <li class="text-sm " id="contact"><a href="#">Contact</a></li>
                 </ul>
             </nav>
 
             <!-- About  -->
-            <section class="bg-slate-800 p-8 rounded-2xl shadow-lg mt-2 " id="card-1">
-                <div class="bg-slate-800 p-8 rounded-2xl shadow-lg border-1 border-gray-700">
+            <section class="bg-slate-800 md:p-8 p-4 rounded-2xl shadow-lg mt-2 " id="card-1">
+                <div class="bg-slate-800 md:p-8 p-4 rounded-2xl shadow-lg border-1 border-gray-700">
                     <h1 class="text-3xl font-bold">About me</h1>
                     <div class="border-3 border-amber-300 rounded-2xl w-1/12 mt-3"></div>
-                    <p class="mt-5">
+                    <p class="mt-5 text-center">
                         I'm a front-end and web designer passionate about creating unique and functional digital
                         experiences. I started designing early and have since transformed ideas into modern, intuitive,
                         and engaging interfaces.
                     </p>
-                    <p class="mt-4">
+                    <p class="mt-4 text-center leading-relaxed">
                         My mission is to combine creativity and strategy to develop websites that not only capture
                         attention but also communicate the brand's message clearly and impactfully. With expertise in
                         UI/UX, Figma, Framer, and front-end development, I consistently strive to deliver digital
@@ -130,41 +130,61 @@
                     <h1 class="text-3xl font-bold mb-7">What do I create?</h1>
 
                     <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                        <div class="flex  bg-slate-900 rounded-xl py-8 px-4">
-                            <img class="w-16 h-16 mx-auto p-2 mr-4" src="./assets/1_icon-design.svg" alt="">
-                            <div class="flex flex-col">
+                        <!-- <div class="md:flex  bg-slate-900 rounded-xl py-8 px-4 flex justify-center items-center">
+                            <img class="w-16 h-16 mx-auto p-2 mr-4 flex items-center" src="./assets/1_icon-design.svg" alt="">
+                            <div>
                                 <h1 class="text-xl font-medium text-white mb-3">Web design</h1>
-                                <p class="text-gray-300">Creation of modern, responsive, and intuitive interfaces,
+                                <p class="text-gray-300 ">Creation of modern, responsive, and intuitive interfaces,
                                     always
-                                    aligned with the brand identity.</p>
+                                    aligned with the brand identity.
+                                </p>
+                            </div>  
+                        </div> -->
+                        <div class="bg-slate-900 rounded-xl py-8 px-4">
+                            <div class="flex md:flex-row flex-col items-center gap-3">
+                                <img class="w-16 h-16 p-2" src="./assets/1_icon-design.svg" alt="">
+                                <h1 class="text-xl font-medium text-white">Web design</h1>
                             </div>
+                            <p class="text-gray-300 md:ml-18 md:text-start text-center md:mt-0 mt-2">
+                                Creation of modern, responsive, and intuitive interfaces,
+                                always aligned with the brand identity.
+                            </p>
                         </div>
-                        <div class="flex py-8 px-4 bg-slate-900 rounded-xl">
-                            <img class="w-16 h-16 mx-auto p-2 mr-4" src="./assets/2_icon-dev.svg" alt="">
-                            <div class="flex flex-col">
-                                <h1 class="text-xl font-medium text-white mb-3">Front-end Development</h1>
-                                <p class="text-gray-300">I transform prototypes into functional websites with clean
-                                    code,
-                                    optimized performance, and impeccable usability.</p>
+
+                        <div class="bg-slate-900 rounded-xl py-8 px-4 items-center">
+                            <div class="flex md:flex-row flex-col items-center gap-3">
+                                <img class="w-16 h-16 p-2" src="./assets/2_icon-dev.svg" alt="">
+                                <h1 class="text-xl font-medium text-white">Front-end Development</h1>
                             </div>
+                            <p class="text-gray-300 md:ml-18 md:text-start text-center md:mt-0 mt-2">
+                                I transform prototypes into functional websites with clean
+                                code,
+                                optimized performance, and impeccable usability.
+                            </p>
                         </div>
-                        <div class="flex py-8 px-4 bg-slate-900 rounded-xl">
-                            <img class="w-16 h-16 mx-auto p-2 mr-4" src="./assets/3_icon-app.svg" alt="">
-                            <div class="flex flex-col">
-                                <h1 class="text-xl font-medium text-white mb-3">UI/UX Design</h1>
-                                <p class="text-gray-300">Digital experiences designed from scratch, focusing on
-                                    usability,
-                                    aesthetics, and strategy.</p>
+
+                        <div class="bg-slate-900 rounded-xl py-8 px-4">
+                            <div class="flex md:flex-row flex-col items-center gap-3">
+                                <img class="w-16 h-16 p-2" src="./assets/3_icon-app.svg" alt="">
+                                <h1 class="text-xl font-medium text-white">UI/UX Design</h1>
                             </div>
+                            <p class="text-gray-300 md:ml-18 md:text-start text-center md:mt-0 mt-2">
+                                Digital experiences designed from scratch, focusing on
+                                usability,
+                                aesthetics, and strategy.
+                            </p>
                         </div>
-                        <div class="flex py-8 px-4 bg-slate-900 rounded-xl">
-                            <img class="w-16 h-16 mx-auto p-2 mr-4" src="./assets/4_figma.svg" alt="">
-                            <div class="flex flex-col">
-                                <h1 class="text-xl font-medium text-white mb-3">Prototyping & Interactivity</h1>
-                                <p class="text-gray-300">I use tools like Figma and Framer to create navigable
-                                    prototypes
-                                    that bring the client's vision closer to the final product.</p>
+
+                        <div class="bg-slate-900 rounded-xl py-8 px-4">
+                            <div class="flex md:flex-row flex-col items-center gap-3">
+                                <img class="w-16 h-16 p-2" src="./assets/4_figma.svg" alt="">
+                                <h1 class="lg:text-xl text-sm font-medium text-white">Prototyping & Interactivity</h1>
                             </div>
+                            <p class="text-gray-300 md:ml-18 md:text-start text-center md:mt-0 mt-2">
+                                I use tools like Figma and Framer to create navigable
+                                prototypes
+                                that bring the client's vision closer to the final product.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -336,7 +356,7 @@
                     </div>
                 </nav>
 
-                <div class="grid grid-cols-3 mt-8 gap-8">
+                <div class="md:grid md:grid-cols-3 mt-8 md:gap-8 flex flex-col gap-4 ">
                     <div class="border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200  object-contain"
                         id="project-1">
                         <img class="rounded-xl object-contain" src="./Hunmaanjii.png" alt="">
@@ -361,14 +381,14 @@
             <!-- Portfolio  -->
 
             <!-- Contact -->
-            <section class="bg-slate-800 p-8 border-gray-700 rounded-2xl shadow-lg mt-2 hidden" id="card-4">
+            <section class="bg-slate-800 p-8 border-gray-700 rounded-2xl shadow-lg mt-2 hidden " id="card-4">
                 <h1 class="text-3xl font-bold">Contact</h1>
                 <div class="border-3 border-amber-300 rounded-2xl w-1/12 mt-3"></div>
 
-                <div class="border-1 border-slate-500 rounded-2xl mt-10 p-10">
-                    <img class="w-25 h-25 rounded-full mb-3" src="./Uniqueimg.jpg" alt="">
-                    <span class="text-2xl font-bold text-gray-100">Darshan choubsia</span>
-                    <p class="text-sm text-gray-400">Hello my Friend if you contact me Dail +91 701468xxxx</p>
+                <div class="border-1 border-slate-500 rounded-2xl mt-10 p-10 flex flex-col items-center">
+                    <img class="w-25 h-25 rounded-full mb-3 " src="./Uniqueimg.jpg" alt="">
+                    <span class="text-2xl font-bold text-gray-100 items-center">Darshan choubsia</span>
+                    <p class="text-sm text-gray-400 text-center">Hello my Friend if you contact me Dail +91 701468xxxx</p>
                 </div>
             </section>
             <!-- Contact  -->
