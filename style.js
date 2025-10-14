@@ -140,12 +140,9 @@ dropdownBtn.addEventListener("click", () => {
 // hidden box 
 const toggleBtn = document.getElementById("toggleBtn");
 const detailsBox = document.getElementById("detailsBox");
-const asidecard = document.getElementById("aside-card");
 
 toggleBtn.addEventListener("click", () => {
   detailsBox.classList.toggle("hidden");
-  detailsBox.style.marginBottom = "4px"
-  detailsBox.style.marginBottom = "4px"
   toggleBtn.textContent = detailsBox.classList.contains("hidden")
     ? "More"
     : "Less";
