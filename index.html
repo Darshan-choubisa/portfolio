@@ -83,7 +83,7 @@
                 </button> -->
             </div>
 
-        
+
             <!-- Hidden section -->
             <div id="detailsBox"
                 class="overflow-hidden opacity-0 lg:hidden max-h-0 border p-4 rounded-xl text-gray-700 transition-all duration-500 ease-in-out">
@@ -344,37 +344,53 @@
             <!-- summary  -->
 
             <!-- Portfolio -->
-            <section class="bg-slate-800 p-8 border-gray-700 rounded-2xl shadow-lg hidden" id="card-3">
+            <section class="bg-slate-800 md:p-8 p-6 border-gray-700 rounded-2xl shadow-lg hidden" id="card-3">
                 <h1 class="text-3xl font-bold">Portfolio</h1>
                 <div class="border-3 border-amber-300 rounded-2xl w-1/12 mt-3"></div>
-                <nav>
+                <nav class="relative ">
                     <div class="mt-7">
-                        <ul class="flex gap-4 text-sm">
-                            <li id="all"><a href="#">All</a></li>
-                            <li id="web-design"><a href="#">Web Design</a></li>
-                            <li id="design"><a href="#">Design</a></li>
-                            <li id="web-development"><a href="#">Web development</a></li>
+                        <ul class="lg:flex  lg:gap-4 gap-3 text-sm hidden">
+                            <li id="all" class="all text-sm"><a href="#">All</a></li>
+                            <li id="web-design" class="web-design text-sm"><a href="#">Web Design</a></li>
+                            <li id="design" class="design text-sm"><a href="#">Design</a></li>
+                            <li id="web-development" class="web-development text-sm"><a href="#">Web development</a>
+                            </li>
                         </ul>
+                    </div>
+                    <!-- Dropdown toggle button -->
+                    <div class="lg:hidden">
+                        <button id="dropdownBtn"
+                        class="bg-slate-700 text-white px-4 py-2 w-full rounded-md flex items-center justify-between">
+                        Options
+                        <i class="fa-solid fa-chevron-down text-sm"></i>
+                    </button>
+                    <div id="dropdownMenu"
+                        class="absolute righ-0 mt-2 w-full bg-slate-800 border rounded-lg shadow-lg overflow-hidden opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-in-out">
+                        <a href="#" class="all block px-4 py-2 text-gray-200 hover:bg-slate-700">All</a>
+                        <a href="#" class="web-design block px-4 py-2 text-gray-200 hover:bg-slate-700">Web Design</a>
+                        <a href="#" class="design block px-4 py-2 text-gray-200 hover:bg-slate-700">Design</a>
+                        <a href="#" class="web-development block px-4 py-2 text-gray-200 hover:bg-slate-700">Web development</a>
+                    </div>
                     </div>
                 </nav>
 
                 <div class="md:grid md:grid-cols-3 mt-8 md:gap-8 flex flex-col gap-4 ">
-                    <div class="border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200  object-contain"
+                    <div class=" border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
                         id="project-1">
                         <img class="rounded-xl object-contain" src="./Hunmaanjii.png" alt="">
                     </div>
 
-                    <div class="border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
+                    <div class=" border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
                         id="project-2">
                         <img class="rounded-xl" src="./Hunmaanjii.png" alt="">
                     </div>
 
-                    <div class="border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
+                    <div class=" border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
                         id="project-3">
                         <img class="rounded-xl" src="./Hunmaanjii.png" alt="">
                     </div>
 
-                    <div class="border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
+                    <div class=" border-1 border-gray-600 rounded-xl hover:scale-90 transform transition-all duration-200"
                         id="project-4">
                         <img class="rounded-xl" src="./Hunmaanjii.png" alt="">
                     </div>
