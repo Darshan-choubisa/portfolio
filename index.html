@@ -48,7 +48,7 @@
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row md:gap-6 px-4 py-10" id="contentWrapper">
 
         <!-- left card  -->
-        <aside class="lg:w-1/4 lg:sticky lg:top-12 lg:self-start relative">
+        <aside id="aside-card" class="lg:w-1/4 lg:sticky lg:top-12 lg:self-start relative">
             <div class="bg-slate-800 p-6 rounded-2xl shadow-lg flex lg:flex-col relative">
                 <div class="flex lg:block gap-5">
                     <img class="w-32 h-32 rounded-full mx-auto lg:mb-4 lg:mt-15 p-0.5 border-3 border-amber-300"
@@ -77,20 +77,18 @@
                 </div>
 
                 <!-- hidden-button  -->
-                <!-- <button
-                    class="absolute bg-amber-700 py-2 px-8 bottom-0 right-0  rounded-br-xl rounded-tl-xl lg:hidden z-10"
-                    id="toggleBtn2">more
-                </button> -->
+                <button
+                    class="absolute  bg-amber-700 py-2 px-8 bottom-0 right-0  rounded-br-xl rounded-tl-xl lg:hidden z-10"
+                    id="toggleBtn">more
+                </button>
             </div>
-
-
             <!-- Hidden section -->
-            <div id="detailsBox"
-                class="overflow-hidden opacity-0 lg:hidden max-h-0 border p-4 rounded-xl text-gray-700 transition-all duration-500 ease-in-out">
+            <div id="detailsBox" class="lg:hidden border p-4 rounded-xl text-gray-700 my-4">
                 <p>Portfolio Value : <span class="text-green-400">$85,000</span></p>
                 <p>Win Rate : 65%</p>
                 <p>Focus : BMW | Porsche | Range Rover</p>
             </div>
+
         </aside>
         <!-- left card -->
 
@@ -360,17 +358,19 @@
                     <!-- Dropdown toggle button -->
                     <div class="lg:hidden">
                         <button id="dropdownBtn"
-                        class="bg-slate-700 text-white px-4 py-2 w-full rounded-md flex items-center justify-between">
-                        Options
-                        <i class="fa-solid fa-chevron-down text-sm"></i>
-                    </button>
-                    <div id="dropdownMenu"
-                        class="absolute righ-0 mt-2 w-full bg-slate-800 border rounded-lg shadow-lg overflow-hidden opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-in-out">
-                        <a href="#" class="all block px-4 py-2 text-gray-200 hover:bg-slate-700">All</a>
-                        <a href="#" class="web-design block px-4 py-2 text-gray-200 hover:bg-slate-700">Web Design</a>
-                        <a href="#" class="design block px-4 py-2 text-gray-200 hover:bg-slate-700">Design</a>
-                        <a href="#" class="web-development block px-4 py-2 text-gray-200 hover:bg-slate-700">Web development</a>
-                    </div>
+                            class="bg-slate-700 text-white px-4 py-2 w-full rounded-md flex items-center justify-between">
+                            Options
+                            <i class="fa-solid fa-chevron-down text-sm"></i>
+                        </button>
+                        <div id="dropdownMenu"
+                            class="absolute righ-0 mt-2 w-full bg-slate-800 border rounded-lg shadow-lg overflow-hidden opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-in-out">
+                            <a href="#" class="all block px-4 py-2 text-gray-200 hover:bg-slate-700">All</a>
+                            <a href="#" class="web-design block px-4 py-2 text-gray-200 hover:bg-slate-700">Web
+                                Design</a>
+                            <a href="#" class="design block px-4 py-2 text-gray-200 hover:bg-slate-700">Design</a>
+                            <a href="#" class="web-development block px-4 py-2 text-gray-200 hover:bg-slate-700">Web
+                                development</a>
+                        </div>
                     </div>
                 </nav>
 

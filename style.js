@@ -82,92 +82,75 @@ dropdownBtn.addEventListener("click", () => {
 });
 
 
-const project1 = document.getElementById("project-1");
-const project2 = document.getElementById("project-2");
-const project3 = document.getElementById("project-3");
-const project4 = document.getElementById("project-4");
+
+// project 
+
+// const project1 = document.getElementById("project-1");
+// const project2 = document.getElementById("project-2");
+// const project3 = document.getElementById("project-3");
+// const project4 = document.getElementById("project-4");
 
 
-const all = document.querySelectorAll(".all");
-const webdesign = document.querySelectorAll(".web-design");
-const design = document.querySelectorAll(".design");
-const webdevelopment = document.querySelectorAll(".web-development")
+// const all = document.querySelectorAll(".all");
+// const webdesign = document.querySelectorAll(".web-design");
+// const design = document.querySelectorAll(".design");
+// const webdevelopment = document.querySelectorAll(".web-development")
 
-// function showproject(project) {
-//   project1.classList.remove("hidden")
-//   project2.classList.remove("hidden")
-//   project3.classList.remove("hidden")
-//   project4.classList.remove("hidden")
+// document.querySelectorAll(".all").forEach(all => {
+//   all.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     if (classList == hidden) {
+//       project1.classList.remove("hidden")
+//       project2.classList.remove("hidden")
+//       project3.classList.remove("hidden")
+//       project4.classList.remove("hidden")
+//     }
+//     else {
+//       project2.classList.add("hidden")
+//       project1.classList.add("hidden")
+//       project3.classList.add("hidden")
+//       project4.classList.add("hidden")
+//     }
+//   })
+// })
 
-//   project.classList.add("hidden")
-// }
+// document.querySelectorAll(".web-design").forEach(webdesign => {
+//   webdesign.addEventListener("click", (e) => {
+//     e.preventDefault()
+//     showproject(project1)
+//     showproject(project2)
+//   })
+// })
 
-document.querySelectorAll(".all").forEach(all => {
-  all.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (classList == hidden) {
-      project1.classList.remove("hidden")
-      project2.classList.remove("hidden")
-      project3.classList.remove("hidden")
-      project4.classList.remove("hidden")
-    }
-    else {
-      project2.classList.add("hidden")
-      project1.classList.add("hidden")
-      project3.classList.add("hidden")
-      project4.classList.add("hidden")
-    }
-  })
-})
+// document.querySelectorAll(".design").forEach(design => {
+//   design.addEventListener("click", (e) => {
+//     e.preventDefault()
+//     showproject(project3)
+//   })
+// })
 
-document.querySelectorAll(".web-design").forEach(webdesign => {
-  webdesign.addEventListener("click", (e) => {
-    e.preventDefault()
-    showproject(project1)
-    showproject(project2)
-  })
-})
-
-document.querySelectorAll(".design").forEach(design => {
-  design.addEventListener("click", (e) => {
-    e.preventDefault()
-    showproject(project3)
-  })
-})
-
-document.querySelectorAll(".web-development").forEach(webdevelopment => {
-  webdevelopment.addEventListener("click", (e) => {
-    e.preventDefault()
-    showproject(project4)
-  })
-})
+// document.querySelectorAll(".web-development").forEach(webdevelopment => {
+//   webdevelopment.addEventListener("click", (e) => {
+//     e.preventDefault()
+//     showproject(project4)
+//   })
+// })
 
 
+// hidden box 
+const toggleBtn = document.getElementById("toggleBtn");
+const detailsBox = document.getElementById("detailsBox");
+const asidecard = document.getElementById("aside-card");
 
+toggleBtn.addEventListener("click", () => {
+  detailsBox.classList.toggle("hidden");
+  detailsBox.style.marginBottom = "4px"
+  detailsBox.style.marginBottom = "4px"
+  toggleBtn.textContent = detailsBox.classList.contains("hidden")
+    ? "More"
+    : "Less";
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-  // hidden box 
-  // const toggleBtn = document.getElementById("toggleBtn");
-  // const detailsBox = document.getElementById("detailsBox");
-
-  // toggleBtn.addEventListener("click", () => {
-  //   detailsBox.classList.toggle("hidden");
-  //   toggleBtn.textContent = detailsBox.classList.contains("hidden")
-  //     ? "More"
-  //     : "Less";
-  // });
-  ;
 
 
 // const toggleBtn2 = document.getElementById("toggleBtn2");
