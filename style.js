@@ -88,6 +88,7 @@ toggleBtn2.addEventListener("click", () => {
   if (isHidden) {
     detailsBox.classList.remove("max-h-0", "opacity-0");
     detailsBox.classList.add("max-h-[500px]", "opacity-100");
+    detailsBox.style.margintop = "8px"
     maincontainer.style.marginTop = "8px"
     toggleBtn2.textContent = "Less";
   } else {
