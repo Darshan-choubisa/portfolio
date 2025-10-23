@@ -886,6 +886,11 @@
       }
     }
   }
+  .sm\:my-2 {
+    @media (width >= 40rem) {
+      margin-block: calc(var(--spacing) * 2);
+    }
+  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
