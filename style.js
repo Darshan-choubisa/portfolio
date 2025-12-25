@@ -64,22 +64,23 @@ document.querySelectorAll(".contact-link").forEach(Contact => {
 })
 
 // Drop down
-const dropdownBtn = document.getElementById("dropdownBtn");
-const dropdownMenu = document.getElementById("dropdownMenu");
+// const dropdownBtn = document.getElementById("dropdownBtn");
+// const dropdownMenu = document.getElementById("dropdownMenu");
 
-dropdownBtn.addEventListener("click", () => {
-  const isHidden = dropdownMenu.classList.contains("opacity-0");
+// dropdownBtn.addEventListener("click", () => {
+//   const isHidden = dropdownMenu.classList.contains("opacity-0");
 
-  if (isHidden) {
-    // show menu
-    dropdownMenu.classList.remove("opacity-0", "scale-95", "pointer-events-none");
-    dropdownMenu.classList.add("opacity-100", "scale-100");
-  } else {
-    // hide menu
-    dropdownMenu.classList.add("opacity-0", "scale-95", "pointer-events-none");
-    dropdownMenu.classList.remove("opacity-100", "scale-100");
-  }
-});
+//   if (isHidden) {
+//     // show menu
+//     dropdownMenu.classList.remove("opacity-0", "scale-95", "pointer-events-none");
+//     dropdownMenu.classList.add("opacity-100", "scale-100");
+//   } else {
+//     // hide menu
+//     dropdownMenu.classList.add("opacity-0", "scale-95", "pointer-events-none");
+//     dropdownMenu.classList.remove("opacity-100", "scale-100");
+//   }
+// });
+
 
 
 
